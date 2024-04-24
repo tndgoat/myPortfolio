@@ -5,6 +5,23 @@ import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
 import axios from 'axios';
 
+import { ToastContainer, toast, Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+const status = () => {
+  toast.success('Message sent successfully!', {
+    position: "top-center",
+    autoClose: 3000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "dark",
+    transition: Bounce,
+  });
+}
+
 const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -35,6 +52,7 @@ const Contact = () => {
       setName('');
       setEmail('');
       setMessage('');
+      status();
     } catch (error) {
       console.error(error);
     }
@@ -72,6 +90,7 @@ const Contact = () => {
           <input type="email" placeholder='Your Email' value={email} onChange={(e) => setEmail(e.target.value)} required />
           <textarea rows="7" placeholder='Your Message' value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
           <button type="submit" className='btn btn-primary'>Send Message</button>
+          <ToastContainer />
         </form>
       </div>
     </section>

@@ -13,42 +13,42 @@ const data = [
     image: IMG1,
     title: 'Lorem ipsum dolor, sit amet consectetur adipisicing.',
     github: 'https://github.com/',
-    demo: 'https://demo'
+    demo: 'https://example.com/'
   },
   {
     id: 2,
     image: IMG2,
     title: 'Lorem ipsum dolor, sit amet consectetur adipisicing.',
     github: 'https://github.com/',
-    demo: 'https://demo'
+    demo: 'https://example.com/'
   },
   {
     id: 3,
     image: IMG3,
     title: 'Lorem ipsum dolor, sit amet consectetur adipisicing.',
     github: 'https://github.com/',
-    demo: 'https://demo'
+    demo: 'https://example.com/'
   },
   {
     id: 4,
     image: IMG4,
     title: 'Lorem ipsum dolor, sit amet consectetur adipisicing.',
     github: 'https://github.com/',
-    demo: 'https://demo'
+    demo: 'https://example.com/'
   },
   {
     id: 5,
     image: IMG5,
     title: 'Lorem ipsum dolor, sit amet consectetur adipisicing.',
     github: 'https://github.com/',
-    demo: 'https://demo'
+    demo: 'https://example.com/'
   },
   {
     id: 6,
     image: IMG6,
     title: 'Lorem ipsum dolor, sit amet consectetur adipisicing.',
     github: 'https://github.com/',
-    demo: 'https://demo'
+    demo: 'https://example.com/'
   }
 ]
 
